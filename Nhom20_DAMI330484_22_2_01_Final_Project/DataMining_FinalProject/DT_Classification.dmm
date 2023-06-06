@@ -1,0 +1,352 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="19699491-30ca-4664-b253-18b8fd965b28" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DT_Classification</ID>
+  <Name>DT_Classification</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Fact_MarketingAnalytic</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-13643" scrolltop="-5289" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32152" y="15579" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_MarketingAnalytic" left="20" top="-2709" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4826" height="7370" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000da120000ca1c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Fact_MarketingAnalytic" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-13643</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5289</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-2709</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="036432f9-75cd-4f49-8f05-58eba9be0ba8">
+    <DataSourceViewID>Data Warehouse Marketing Analytics</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6ea8ad03-7d95-4c20-8fd0-b92a85d606fa">
+      <ID>Complain</ID>
+      <Name>Complain</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="00d216fe-4847-4c4c-88c7-d4b7c5ec9dec">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e42cf232-3a26-49f7-bc97-f83022bf8b10">
+            <TableID>dbo_Fact_MarketingAnalytic</TableID>
+            <ColumnID>Complain</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d3ca4d7f-6a32-4231-bb6d-9bfaadc56430">
+      <ID>Num Catalog Purchases</ID>
+      <Name>Num Catalog Purchases</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="60e14af6-cf0b-4cf7-81ab-8e73d4a6e657">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="11636fe1-78ba-401b-8cca-255e9df0d5d2">
+            <TableID>dbo_Fact_MarketingAnalytic</TableID>
+            <ColumnID>NumCatalogPurchases</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d44aa095-d9f3-4523-886a-0be132ec9676">
+      <ID>Num Deals Purchases</ID>
+      <Name>Num Deals Purchases</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="97ff0547-b264-43e8-b212-d87da9149a08">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2daf3ed7-67ea-483e-8109-6264e04431ed">
+            <TableID>dbo_Fact_MarketingAnalytic</TableID>
+            <ColumnID>NumDealsPurchases</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="abd22412-cbdc-4e58-a712-990ca9ce5b6c">
+      <ID>Num Store Purchases</ID>
+      <Name>Num Store Purchases</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5207f5ca-553d-4a4b-8317-987c6e6c19ed">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04cd3c7d-648c-4514-941a-3b9f4718f809">
+            <TableID>dbo_Fact_MarketingAnalytic</TableID>
+            <ColumnID>NumStorePurchases</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="cbe8667c-bd91-49f6-a298-c972ff4a4b59">
+      <ID>Num Web Purchases</ID>
+      <Name>Num Web Purchases</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="049b7185-db9b-4610-9390-19e83f07e2ed">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="043ba06a-7970-4e16-9557-0b069cbc0841">
+            <TableID>dbo_Fact_MarketingAnalytic</TableID>
+            <ColumnID>NumWebPurchases</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8614eb22-74ef-4029-ab8a-25c2f113ded7">
+      <ID>Num Web Visits Month</ID>
+      <Name>Num Web Visits Month</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8ef266a5-d2de-47c7-9476-78cb8412de2e">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="888a8e4d-4c4a-460a-a720-092f345d0a46">
+            <TableID>dbo_Fact_MarketingAnalytic</TableID>
+            <ColumnID>NumWebVisitsMonth</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="442e53bd-b48a-4409-8c75-6e6d62ff3fdf">
+      <ID>Recency</ID>
+      <Name>Recency</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f9fbddc6-7174-48ea-94d8-8f4398a75065">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b70b56c-08f8-4b21-85a7-e2cc18a73579">
+            <TableID>dbo_Fact_MarketingAnalytic</TableID>
+            <ColumnID>Recency</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="eadafd22-a6cd-4c02-a4df-f3ea15db25ff">
+      <ID>Response</ID>
+      <Name>Response</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2495aeb5-8b57-4f80-9c24-95327092283e">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dbb6925c-0d17-46cc-aca0-2dff307e44ea">
+            <TableID>dbo_Fact_MarketingAnalytic</TableID>
+            <ColumnID>Response</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3e9d42ea-cec4-4936-84e6-970b41c1bdb2">
+      <ID>Total Campaigns Accepted</ID>
+      <Name>Total Campaigns Accepted</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e6feb51b-3353-42b8-9c57-ba29ea9ae0d7">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6a78d4d5-1049-4710-aa58-89e7f2b2a561">
+            <TableID>dbo_Fact_MarketingAnalytic</TableID>
+            <ColumnID>Total_Campaigns_Accepted</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5bf372aa-14f5-4d93-93cd-9057cbb62a33">
+      <ID>Total Spent</ID>
+      <Name>Total Spent</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="81aa4f25-3127-4ecf-bc63-f600703445d6">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="948c69b9-a354-44af-ab9c-9911e0eba23a">
+            <TableID>dbo_Fact_MarketingAnalytic</TableID>
+            <ColumnID>Total_Spent</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="80ffb54a-0bd0-4512-92d2-bde827f48d8d">
+      <ID>User ID</ID>
+      <Name>User ID</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b5c8af3e-8d58-4ea8-98d8-f7c4861c1687">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9c4edf80-5cbe-4e8c-8626-762cc500f523">
+            <TableID>dbo_Fact_MarketingAnalytic</TableID>
+            <ColumnID>User_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="c8f2761c-1d5b-4e61-9447-0feabe5f1e87">
+      <ID>DT_Classification</ID>
+      <Name>DT_Classification</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="1695952f-6cb7-454f-a777-daaa1224ef38">
+          <ID>Complain</ID>
+          <Name>Complain</Name>
+          <SourceColumnID>Complain</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="82e1382c-9680-43f6-a4d0-684776b8cb57">
+          <ID>Num Catalog Purchases</ID>
+          <Name>Num Catalog Purchases</Name>
+          <SourceColumnID>Num Catalog Purchases</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="5a4104cf-d570-4c1b-b800-4733b4aedfe9">
+          <ID>Num Deals Purchases</ID>
+          <Name>Num Deals Purchases</Name>
+          <SourceColumnID>Num Deals Purchases</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="c0a687bc-6c2e-4dae-836c-d5427d7714f8">
+          <ID>Num Store Purchases</ID>
+          <Name>Num Store Purchases</Name>
+          <SourceColumnID>Num Store Purchases</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="0696a8aa-cfb6-44b8-ab52-0d726a3618c1">
+          <ID>Num Web Purchases</ID>
+          <Name>Num Web Purchases</Name>
+          <SourceColumnID>Num Web Purchases</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="9abceb33-08b5-4482-9c1c-40748bf5c671">
+          <ID>Num Web Visits Month</ID>
+          <Name>Num Web Visits Month</Name>
+          <SourceColumnID>Num Web Visits Month</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="d1ca106b-68e0-4dc1-9146-dace2311b377">
+          <ID>Recency</ID>
+          <Name>Recency</Name>
+          <SourceColumnID>Recency</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4b20fa09-3c20-4ee8-bed7-0b4d13b95d1f">
+          <ID>Response</ID>
+          <Name>Response</Name>
+          <SourceColumnID>Response</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="ea2ee7d7-02f5-45ed-b69f-a7ed2bb148da">
+          <ID>Total Campaigns Accepted</ID>
+          <Name>Total Campaigns Accepted</Name>
+          <SourceColumnID>Total Campaigns Accepted</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="fb6c543c-82e1-4b9e-b8e0-e85f2c0f1440">
+          <ID>Total Spent</ID>
+          <Name>Total Spent</Name>
+          <SourceColumnID>Total Spent</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="6dfb2e9e-3b73-4170-8928-41892a1eb067">
+          <ID>User ID</ID>
+          <Name>User ID</Name>
+          <SourceColumnID>User ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

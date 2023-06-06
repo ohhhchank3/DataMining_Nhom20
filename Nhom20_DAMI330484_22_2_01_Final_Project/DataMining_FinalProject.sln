@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "DataMining_FinalProject", "DataMining_FinalProject\DataMining_FinalProject.dwproj", "{C9BC6DB9-66A5-4D48-8FE9-3C0896586DD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9BC6DB9-66A5-4D48-8FE9-3C0896586DD3}.Development|Default.ActiveCfg = Development
+		{C9BC6DB9-66A5-4D48-8FE9-3C0896586DD3}.Development|Default.Build.0 = Development
+		{C9BC6DB9-66A5-4D48-8FE9-3C0896586DD3}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4C21826-EE1E-4A30-8D3C-F449C0986D6F}
+	EndGlobalSection
+EndGlobal

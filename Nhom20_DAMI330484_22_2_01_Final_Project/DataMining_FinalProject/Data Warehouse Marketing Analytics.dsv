@@ -1,0 +1,107 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9ed52a3a-cd09-4e22-ad9d-ea1d9f12b9ff" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Data Warehouse Marketing Analytics</ID>
+  <Name>Data Warehouse Marketing Analytics</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8245" scrolltop="-5977" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="21357" y="16955" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_MarketingAnalytic" left="486" top="-2646" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4826" height="8662" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000da120000d6210000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Fact_MarketingAnalytic" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-8245</DiagramViewPortLeft>
+            <DiagramViewPortTop>-5977</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>MarketingAnalyticsDWH</DataSourceID>
+  <Schema>
+    <xs:schema id="Data_x0020_Warehouse_x0020_Marketing_x0020_Analytics" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Data_x0020_Warehouse_x0020_Marketing_x0020_Analytics" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="9dbbd2da-8c63-4a50-83e2-1bd65de16bae">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fact_MarketingAnalytic" msprop:design-time-name="64185ea7-7193-40e9-a295-0ab29691a49a" msprop:FriendlyName="Fact_MarketingAnalytic" msprop:DbSchemaName="dbo" msprop:DbTableName="Fact_MarketingAnalytic" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="User_ID" msprop:design-time-name="22f25ae4-6449-4dbd-9e7e-3c877498fe8c" msprop:DbColumnName="User_ID" msprop:FriendlyName="User_ID" type="xs:int" />
+                  <xs:element name="Date_ID" msprop:design-time-name="00d85b2b-f10d-4b54-83e6-8dc3268cc4f8" msprop:DbColumnName="Date_ID" msprop:FriendlyName="Date_ID" type="xs:dateTime" />
+                  <xs:element name="Recency" msprop:design-time-name="a2f91494-fd02-4115-8c6f-d37eb25425d9" msprop:DbColumnName="Recency" msprop:FriendlyName="Recency" type="xs:int" minOccurs="0" />
+                  <xs:element name="MntWines" msprop:design-time-name="3ebbe0ff-7b97-4586-b3b2-992efd52a37e" msprop:DbColumnName="MntWines" msprop:FriendlyName="MntWines" type="xs:double" minOccurs="0" />
+                  <xs:element name="MntFruits" msprop:design-time-name="55502312-14c8-4f4f-adae-63658201dba8" msprop:DbColumnName="MntFruits" msprop:FriendlyName="MntFruits" type="xs:double" minOccurs="0" />
+                  <xs:element name="MntMeats" msprop:design-time-name="ac190d04-109a-4f20-bd81-369d35f53452" msprop:DbColumnName="MntMeats" msprop:FriendlyName="MntMeats" type="xs:double" minOccurs="0" />
+                  <xs:element name="MntFishs" msprop:design-time-name="bc42c6bc-e170-47c1-b733-ade9be9f6432" msprop:DbColumnName="MntFishs" msprop:FriendlyName="MntFishs" type="xs:double" minOccurs="0" />
+                  <xs:element name="MntSweets" msprop:design-time-name="94d3de3c-2be1-433a-b9f4-7c56931fcdbc" msprop:DbColumnName="MntSweets" msprop:FriendlyName="MntSweets" type="xs:double" minOccurs="0" />
+                  <xs:element name="MntGolds" msprop:design-time-name="2a56a5a8-5557-497f-b19e-0668848bb575" msprop:DbColumnName="MntGolds" msprop:FriendlyName="MntGolds" type="xs:double" minOccurs="0" />
+                  <xs:element name="NumDealsPurchases" msprop:design-time-name="68780ba2-2c2d-4e28-8e49-375c6c88b1fc" msprop:DbColumnName="NumDealsPurchases" msprop:FriendlyName="NumDealsPurchases" type="xs:int" minOccurs="0" />
+                  <xs:element name="NumWebPurchases" msprop:design-time-name="356ddea1-ecd1-497c-a979-04656098e363" msprop:DbColumnName="NumWebPurchases" msprop:FriendlyName="NumWebPurchases" type="xs:int" minOccurs="0" />
+                  <xs:element name="NumCatalogPurchases" msprop:design-time-name="949bedc5-8e0a-4741-b1a4-b3b0ad4de510" msprop:DbColumnName="NumCatalogPurchases" msprop:FriendlyName="NumCatalogPurchases" type="xs:int" minOccurs="0" />
+                  <xs:element name="NumStorePurchases" msprop:design-time-name="3c4d455f-8428-4e79-8df2-24355fde0fa8" msprop:DbColumnName="NumStorePurchases" msprop:FriendlyName="NumStorePurchases" type="xs:int" minOccurs="0" />
+                  <xs:element name="NumWebVisitsMonth" msprop:design-time-name="fd63841f-6b13-4d8f-a170-f3cf3830d475" msprop:DbColumnName="NumWebVisitsMonth" msprop:FriendlyName="NumWebVisitsMonth" type="xs:int" minOccurs="0" />
+                  <xs:element name="Response" msprop:design-time-name="6ae49819-3fea-4e9c-81b2-c28fd97bbfa5" msprop:DbColumnName="Response" msprop:FriendlyName="Response" type="xs:int" minOccurs="0" />
+                  <xs:element name="Complain" msprop:design-time-name="b2fbdb8b-f68e-4174-86f1-84bcf8d54aa5" msprop:DbColumnName="Complain" msprop:FriendlyName="Complain" type="xs:int" minOccurs="0" />
+                  <xs:element name="Total_Campaigns_Accepted" msprop:design-time-name="7392e12f-1bef-4dc8-b6de-cae0f881c34d" msprop:DbColumnName="Total_Campaigns_Accepted" msprop:FriendlyName="Total_Campaigns_Accepted" type="xs:int" minOccurs="0" />
+                  <xs:element name="Total_Spent" msprop:design-time-name="47f353a7-ebe2-43cc-b66a-c5b15c4e1758" msprop:DbColumnName="Total_Spent" msprop:FriendlyName="Total_Spent" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_MarketingAnalytic" />
+          <xs:field xpath="User_ID" />
+          <xs:field xpath="Date_ID" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <Data_x0020_Warehouse_x0020_Marketing_x0020_Analytics xmlns="" />
+  </Schema>
+</DataSourceView>
